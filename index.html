@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rosaryo</title>
+    <link rel="shortcut icon" type="image/png" href="favicon/praying_favicon.png">
+    <!-- Add a favicon here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+   
+<body>
+    
+    <div class="container">
+
+        <!-- The Rosary Mysteries button that will give you the mysteries -->
+        <div class="container" id="mysteryButtons">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" title="Monday and Saturday" onclick="showJoyful()">Joyful Mystery</button>
+            <button type="button" class="btn btn-link" data-toggle="tooltip" title="Tuesday and Friday" onclick="showSorrowful()">Sorrowful Mystery</button>
+            <button type="button" class="btn btn-link" data-toggle="tooltip" title="Sunday and Wednesday" onclick="showGlorious()">Glorious Mystery</button>
+            <button type="button" class="btn btn-link" data-toggle="tooltip" title="Thursday" onclick="showLuminous()">Luminous Mystery</button>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel slide" data-ride="carousel" id="carousel">
+
+            <ul class="carousel-indicators">
+                <li data-target="carousel" data-slide-to="0" class="active"></li>
+                <li data-target="carousel" data-slide-to="1"></li>
+                <li data-target="carousel" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/rosary1.jpg" alt="Rosary" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/rosary2.jpg" alt="Rosary" width="1100" height="500">
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/rosary3.jpg" alt="Rosary" width="1100" height="500">
+                </div>
+            </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="mysteryModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" id="modalContent">
+                    <div class="modeal-header">
+                        <h4 class="modal-title" id="headerModal"></h4>
+                    </div>
+                    <hr>
+                    <div class="model-body" id="bodyModal">   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainContent">
+        <!-- Apostles' Creed -->
+            <div class="container text-center">
+                <h2>
+                    Apostles' Creed
+                </h2>
+                <p>
+                        I believe in God, the Father Almighty, Creator of heaven and earth, and in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell. The third day he arose again from the dead. He ascended into heaven and is seated at the right hand of the Father. From thence he shall come to judge the living and the dead. I believe in the Holy Spirit, the holy Catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen
+                </p>
+            </div>
+
+            <!-- Our Father - The Lord's Prayer -->
+            <div class="container text-center">
+                <h2>
+                    Our Father
+                </h2>
+                <p>
+                    Our Father, Who art in heaven; hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us, and lead us not into temptation; but deliver us from evil. Amen.
+                </p>
+            </div>
+
+            <!-- Hail Mary -->
+            <div class="container text-center">
+                <h2>
+                    Hail Mary
+                </h2>
+                <p>
+                    Hail Mary, full of grace, the Lord is with thee; blessed art thou among women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.
+                </p>
+            </div>
+
+            <!-- Glory Be -->
+            <div class="container text-center">
+                <h2>
+                    Glory Be
+                </h2>
+                <p>
+                        Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.
+                </p>
+            </div>
+
+            <!-- The Fatima Prayer -->
+            <div class="container text-center">
+                <h2>
+                    The Fatima Prayer
+                </h2>
+                <p>
+                    O my Jesus, forgive us our sins. Save us from the fires of hell, lead all souls to heaven especially those in most need of Thy mercy.
+                </p>
+            </div>
+
+            <!-- Hail Holy Queen -->
+            <div class="container text-center">
+                <h2>
+                    Hail Holy Queen
+                </h2>
+                <p>
+                    Hail, Holy Queen, Mother of Mercy, our life, our sweetness and our hope, to thee do we cry, poor banished children of Eve; to thee do we send up our sighs, mourning and weeping in this vale of tears; turn, then most gracious Advocate, thine eyes of mercy towards us, and after this, our exile, show unto us the blessed fruit of thy womb Jesus. O clement, O loving, O sweet Virgin Mary! Pray for us, O holy Mother of God, that we may be made worthy of the promises of Christ.
+                </p>
+            </div>
+
+            <!-- Let Us Pray -->
+            <div class="container text-center">
+                <h2>
+                    Let Us Pray
+                </h2>
+                <p>
+                    Let us pray, O God, whose only begotten Son, by His life, death and Resurrection, has purchased for us the reward of eternal salvation. Grant we beseech Thee that while meditating upon these mysteries of the most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise through the same Christ our Lord. Amen.
+                </p>
+            </div>
+        </div>
+        
+        
+
+    </div>    
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+
+</html>

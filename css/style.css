@@ -1,0 +1,65 @@
+#mysteryButtons 
+{
+    text-align: center;
+}
+
+#headerModal
+{
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+}
+
+#jumbotron 
+{
+    background-color: lightgray;
+    padding: 5px, 10px, 5px, 10px;
+}
+
+#carousel  
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#modalContent 
+{
+    background-color: lightgrey;
+}
+   
+#mysteryButtons 
+{
+    padding-top: 10px;
+    padding-bottom: 20px;   
+}
+
+#homeButton
+{
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#adorationImage 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.pageHeader
+{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
